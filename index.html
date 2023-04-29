@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Stock Keeper（ストックキーパー） -LP②test-</title>
+    <meta name="description" content="【Stock Keeper】ストックキーパーでバーコードスキャンをして、食材の賞味期限や在庫を簡単に管理しましょう。防災グッズや家計簿にも活用できます。">
+    <meta name="keywords" content="賞味期限,賞味期限管理,在庫管理,家計簿">
+    <!-- レスポンシブ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- OGP SNSでシェアしたとき正しく表示 -->
+    <meta property="og:url" content="https://twitter.com/kaori_mbc">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Stock Keeper -LP②test-">
+    <meta property="og:description" content="【Stock Keeper】ストックキーパーでバーコードスキャンをして、食材の賞味期限や在庫を簡単に管理しましょう。">
+    <meta property="og:site_name" content="Stock Keeper（ストックキーパー）">
+    <meta property="og:image" content="https://twitter.com/kaori_mbc">
+    <!-- ICON -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180×180" href="img/0.logo.png">
+    <!-- Googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <div class="header-wrap">
+        <div class="header-wrap-inner">
+          <!-- 左-ロゴ画像 -->
+          <a href="#" class="header-wrap__logo">
+            <img src="img/0.logo.png" alt="ロゴ画像">
+          </a>
+          <!-- 右-メニューリスト -->
+          <nav class="header-wrap__nav">
+            <ul class="header-wrap__nav__list">
+              <li class="header-wrap__nav__list__item">
+                <a href="#about">機能・特徴</a>
+              </li>
+              <li class="header-wrap__nav__list__item">
+                <a href="#how">ご利用方法</a>
+              </li>
+              <li class="header-wrap__nav__list__item">
+                <a href="#voice">お客様の声</a>
+              </li>
+              <li class="header-wrap__nav__list__item">
+                <a href="#faq">よくある質問</a>
+              </li>
+              <li class="header-wrap__nav__list__item">
+                <a href="#news">お知らせ</a>
+              </li>
+              <li class="header-wrap__nav__list__item__contact">
+                <a href="https://twitter.com/kaori_mbc">お問い合わせ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- ハンバーガーメニュー -->
+      <div class="drawer"></div>
+    </header>
+    <main>
+      <!-- top -->
+      <section class="top" id="top">
+        <div class="top-wrap">
+          <h1 class="top-wrap__ttl">食品管理も簡単に！備蓄も安心！</h1>
+          <div class="top-wrap-block">
+            <!-- 左側 -->
+            <div class="top-wrap-left">
+              <div class="top-wrap-left__txt_1">
+                <p class="top-wrap__txt_1">
+                  ストックキーパーでバーコードスキャンをして、<br class="__pc __tab">
+                  食材の賞味期限や在庫を簡単に管理しましょう。<br class="__pc">
+                  防災グッズや家計簿にも活用できます。
+                </p>
+              </div>
+      
+              <div class="top-wrap-left__txt_2">
+                <p class="top-wrap__txt_2">賞味期限管理アプリ</p>
+                <p class="top-wrap__txt_3">50万ダウンロード突破</p>
+              </div>
+              <!-- ダウンロードボタン -->
+              <div class="top-wrap-left__txt_3">
+                <!-- App -->
+                <div class="top-wrap__txt_3__dw">
+                  <a href="https://www.apple.com/jp/app-store/">
+                    <img src="img/3.apple.png" alt="App Store">
+                  </a>
+                </div>
+                <!-- Google -->
+                <div class="top-wrap__txt_3__dw">
+                  <a href="https://play.google.com/store/apps?hl=ja&gl=US/">
+                    <img src="img/2.google.png" alt="Google Store">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- 右側 -->
+            <div class="top-wrap-right">
+              <div class="top-wrap-right__img">
+                <img src="img/1.冷蔵庫の中_iPhone埋め込み.png" alt="topイメージ画像">
+              </div>
+            </div>
+      
+            <!-- 背景の丸 -->
+            <div class="top-wrap-back">
+              <div class="yellow_circle"></div>
+              <div class="pink_circle"></div>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      
+      <!-- お悩みproblem -->
+      <section class="problem" id="problem">
+        <div class="problem-wrap inner">
+          <!-- ブロック1 -->
+          <div class="problem-wrap-block1">
+            <div class="problem-wrap-block1__inner">
+              <div class="problem-wrap-block1__inner__ttl">
+                <p class="ttl__copy">家族のために毎日がんばっているお母さん</p>
+                <h2 class="ttl__problem">こんなお悩みはありませんか？</h2>
+              </div>
+      
+              <div class="problem-wrap-block1__people__all">
+                <!-- お悩み1人目 -->
+                <div class="problem-people">
+                  <!-- 悩み吹き出し -->
+                  <div class="problem-people-baloon">
+                    <p class="problem_txt">
+                      冷蔵庫や食品棚の奥から<br class="__pc">
+                      賞味期限切れの食品が出てきた…
+                    </p>
+                  </div>
+                  <div class="problem-people-img">
+                    <img src="img/4.お悩み_緑1.png" alt="お悩みママ画像">
+                  </div>
+                </div>
+                <!-- お悩み2人目 -->
+                <div class="problem-people">
+                  <!-- 悩み吹き出し -->
+                  <div class="problem-people-baloon">
+                    <p class="problem_txt">
+                      家にあるのにあるのに<br class="__pc">
+                      うっかり同じものを買ってしまった
+                    </p>
+                  </div>
+                  <div class="problem-people-img">
+                    <img src="img/5.お悩み_橙2.png" alt="お悩みママ画像">
+                  </div>
+                </div>
+                <!-- お悩み3人目 -->
+                <div class="problem-people">
+                  <!-- 悩み吹き出し -->
+                  <div class="problem-people-baloon">
+                    <p class="problem_txt">
+                      災害時の備蓄品<br class="__pc">
+                      どこに置いたのか忘れてしまった…
+                    </p>
+                  </div>
+                  <div class="problem-people-img">
+                    <img src="img/6.お悩み_青3.png" alt="お悩みママ画像">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- ブロック2 -->
+          <div class="problem-wrap-block2">
+            <p class="problem-block2-copy">その食品のお悩み</p>
+            <div class="logo_mark">
+              <img src="img/14.ロゴマーク.png" alt="ロゴマーク" width="61px">
+              <p class="logo_mark_txt"><strong>Stock Keeper</strong>が</p>
+            </div>
+            <p class="problem-block2-txt"><strong>解決</strong>します！
+            <p>
+          </div>
+      
+          <!-- ブロック3 -->
+          <div class="problem-wrap-block3">
+            <div class="problem-wrap-block3__inner">
+              <div class="problem-wrap-block3__people__all">
+                <!-- 解決1人目 -->
+                <div class="solution-people">
+                  <div class="solution-people-img">
+                    <img src="img/7.解決_緑1.png" alt="解決ママ画像">
+                  </div>
+                  <p class="solution-people-copy">食品の賞味期限が</p>
+                  <p class="solution-people-copy2">見える</p>
+                  <div class="solution-people-txt">
+                    <p class="solution-people-txt__txt">
+                      冷蔵庫の食品や、非常用の保存食の賞味期限をスマホやパソコンから登録しておくと、自分で決めたタイミングで通知してくれます。
+                    </p>
+                  </div>
+                </div>
+                <!-- 解決2人目 -->
+                <div class="solution-people">
+                  <div class="solution-people-img">
+                    <img src="img/8.解決_橙2.png" alt="解決ママ画像">
+                  </div>
+                  <p class="solution-people-copy">食品の在庫数が</p>
+                  <p class="solution-people-copy2">分かる</p>
+                  <div class="solution-people-txt">
+                    <p class="solution-people-txt__txt">
+                      冷蔵庫の食品や、非常用の保存食の賞味期限をスマホやパソコンから登録しておくと、自分で決めたタイミングで通知してくれます。
+                    </p>
+                  </div>
+                </div>
+                <!-- 解決3人目 -->
+                <div class="solution-people">
+                  <div class="solution-people-img">
+                    <img src="img/9.解決_青3.png" alt="解決ママ画像">
+                  </div>
+                  <p class="solution-people-copy">食品の保管場所が</p>
+                  <p class="solution-people-copy2">見える</p>
+                  <div class="solution-people-txt">
+                    <p class="solution-people-txt__txt">
+                      冷蔵庫の食品や、非常用の保存食の賞味期限をスマホやパソコンから登録しておくと、自分で決めたタイミングで通知してくれます。
+                    </p>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      
+      <!-- 機能・特徴About -->
+      <section class="about" id="about">
+        <div class="about-wrap __wrap">
+          <!-- タイトル -->
+          <div class="wrap-ttl">
+            <p class="wrap-ttl__copy">Stock Keeperの</p>
+            <h2 class="wrap-ttl__ttl">機能・特徴</h2>
+            <p class="wrap-ttl__ttl__sub">About</p>
+          </div>
+      
+          <!-- ３つのブロック囲う -->
+          <div class="about-wrap__all">
+            <!-- 1つめ -->
+            <div class="about-wrap__all__block">
+              <div class="about-wrap__all__block__inner">
+                <!-- 左 -->
+                <div class="about-wrap__all__block__inner__left">
+                  <img src="img/10.アプリ画面(バーコード読取).png" alt="アプリ画面1">
+                </div>
+                <!-- 右 -->
+                <div class="about-wrap__all__block__inner__right">
+                  <div class="block__inner__ttl">
+                    <h3 class="block__inner__ttl__t">商品登録は</h3>
+                    <h3 class="block__inner__ttl__t">バーコードを読み取るだけ</h3>
+                  </div>
+      
+                  <p class="block__inner__txt">
+                    このアプリが便利なのは、商品に付いているバーコードをスキャンすると、データベースから商品名や写真を引っ張ってきてくれるところ。<br>
+                    この機能により登録が簡単にできます。<br>
+                    もちろん、バーコードの付いていない食材も手入力で登録できます。<br>
+                    登録された食品はトップページで賞味期限までの日数が確認できます。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- 2つめ -->
+            <div class="about-wrap__all__block">
+              <div class="about-wrap__all__block__inner __rev1">
+                <!-- 左 -->
+                <div class="about-wrap__all__block__inner__left">
+                  <img src="img/11.アプリ画面(個数手入力).png" alt="アプリ画面2">
+                </div>
+                <!-- 右 -->
+                <div class="about-wrap__all__block__inner__right">
+                  <div class="block__inner__ttl">
+                    <h3 class="block__inner__ttl__t">個数や賞味期限は</h3>
+                    <h3 class="block__inner__ttl__t">手入力で簡単編集するだけ</h3>
+                  </div>
+                  <p class="block__inner__txt">
+                    食品のバーコードを読み取ると自動的に画像や賞味期限がデータとして登録されます。<br>
+                    実際の賞味期限と異なる場合は手入力で簡単に編集ができます。<br>
+                    データベースにないコードは「オリジナルコード」として自分で登録でき、次回からは読み取れるようになります。<br>
+                    この情報を他のユーザーと共有する設定にすると、データベースが充実していきます。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- 3つめ -->
+            <div class="about-wrap__all__block">
+              <div class="about-wrap__all__block__inner">
+                <!-- 左 -->
+                <div class="about-wrap__all__block__inner__left">
+                  <img src="img/12.アプリ画面(通知設定).png" alt="アプリ画面3">
+                </div>
+                <!-- 右 -->
+                <div class="about-wrap__all__block__inner__right">
+                  <div class="block__inner__ttl">
+                    <h3 class="block__inner__ttl__t">期限切れの通知は</h3>
+                    <h3 class="block__inner__ttl__t">好きなタイミングを選ぶだけ</h3>
+                  </div>
+      
+                  <p class="block__inner__txt">
+                    賞味期限切れの通知のタイミングは、当日/1日前/3日前/7日前/30日前から選択できます。<br>
+                    登録された食品はトップページで賞味期限までの日数が確認できます。<br>
+                    商品の編集画面では「レシピ検索用の名称」を入れておくとcookpadでレシピ検索が可能です。<br>
+                    冷蔵庫の賞味期限が近い食材で献立をつくってくれる嬉しい機能つきです。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- ご利用方法how -->
+      <section class="how" id="how">
+        <div class="how-wrap __wrap">
+          <!-- タイトル -->
+          <div class="wrap-ttl">
+            <p class="wrap-ttl__copy">Stock Keeperの</p>
+            <h2 class="wrap-ttl__ttl">ご利用方法</h2>
+            <p class="wrap-ttl__ttl__sub">How to use</p>
+          </div>
+      
+          <!-- 1~3番囲む -->
+          <div class="how-wrap__all">
+            <!-- 1番 -->
+            <div class="how-wrap__all__block__box">
+              <div class="how__block__box__number1"></div>
+              <p class="how__block__box__txt__ttl">アプリをダウンロード</p>
+              <p class="how__block__box__txt__txt">
+                アカウント登録を行っていただくと<br class="__sp">
+                利用する際に便利です。
+              </p>
+            </div>
+      
+            <!-- 2番 -->
+            <div class="how-wrap__all__block__box">
+              <div class="how__block__box__number2"></div>
+              <p class="how__block__box__txt__ttl">商品のバーコードをスキャン</p>
+              <p class="how__block__box__txt__txt">
+                バーコードが付いていない商品は<br class="__sp">
+                手入力で登録ができます。
+              </p>
+            </div>
+            <!-- 3番 -->
+            <div class="how-wrap__all__block__box">
+              <div class="how__block__box__number3"></div>
+              <p class="how__block__box__txt__ttl">賞味期限を登録する</p>
+              <p class="how__block__box__txt__txt">
+                自動的に画像や賞味期限がデータで<br class="__sp">
+                登録されます。
+              </p>
+            </div>
+      
+          </div>
+      
+          <div class="how-wrap__dw__block">
+            <div class="how-wrap__dw__block__txt">
+              <p class="block__inner__ttl__t">アプリをダウンロードする</p>
+            </div>
+      
+            <div class="how-wrap__dw__block__img">
+              <!-- App -->
+              <div class="how-wrap__dw__block__img__img">
+                <a href="https://www.apple.com/jp/app-store/">
+                  <img src="img/3.apple.png" alt="App Store">
+                </a>
+              </div>
+              <!-- Google -->
+              <div class="how-wrap__dw__block__img__img">
+                <a href="https://play.google.com/store/apps?hl=ja&gl=US/">
+                  <img src="img/2.google.png" alt="Google Store">
+                </a>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      
+      <!-- お客様の声voice -->
+      <section class="voice" id="voice">
+        <div class="voice-wrap inner">
+          <!-- タイトル -->
+          <div class="wrap-ttl">
+            <p class="wrap-ttl__copy">Stock Keeperの</p>
+            <h2 class="wrap-ttl__ttl">お客様の声</h2>
+            <p class="wrap-ttl__ttl__sub">User voice</p>
+          </div>
+      
+          <!-- お客様3人 -->
+          <div class="voice-wrap-guest">
+            <div class="problem-wrap-block3__people__all">
+              <!-- 1人目 -->
+              <div class="solution-people">
+                <div class="solution-people-img">
+                  <img src="img/7.解決_緑1.png" alt="解決ママ画像">
+                </div>
+                <p class="solution-people-copy">20代/主婦A様</p>
+                <p class="solution-people-copy2 __voice">食品ロスが減った</p>
+                <div class="solution-people-txt">
+                  <p class="solution-people-txt__txt">
+                    登録した商品の賞味期限が近づくと通知が来るので、捨てることが無くなりました。
+                    cookでレシピ検索が出来るので便利です。
+                  </p>
+                </div>
+              </div>
+              <!-- 2人目 -->
+              <div class="solution-people">
+                <div class="solution-people-img">
+                  <img src="img/8.解決_橙2.png" alt="解決ママ画像">
+                </div>
+                <p class="solution-people-copy">30代/会社員B様</p>
+                <p class="solution-people-copy2 __voice">通知で忘れない</p>
+                <div class="solution-people-txt">
+                  <p class="solution-people-txt__txt">
+                    登録した商品の賞味期限が近づくと通知が来るので、捨てることが無くなりました。
+                    cookでレシピ検索が出来るので便利です。
+                  </p>
+                </div>
+              </div>
+              <!-- 3人目 -->
+              <div class="solution-people">
+                <div class="solution-people-img">
+                  <img src="img/9.解決_青3.png" alt="解決ママ画像">
+                </div>
+                <p class="solution-people-copy">40代/パートC様</p>
+                <p class="solution-people-copy2 __voice">在庫数が分かる</p>
+                <div class="solution-people-txt">
+                  <p class="solution-people-txt__txt">
+                    登録した商品の賞味期限が近づくと通知が来るので、捨てることが無くなりました。
+                    cookでレシピ検索が出来るので便利です。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      
+      <!-- よくある質問FAQ -->
+      <section class="faq" id="faq">
+        <div class="faq-wrap">
+          <!-- タイトル -->
+          <div class="wrap-ttl">
+            <p class="wrap-ttl__copy">Stock Keeperの</p>
+            <h2 class="wrap-ttl__ttl">よくある質問</h2>
+            <p class="wrap-ttl__ttl__sub">FAQ</p>
+          </div>
+          <!-- FAQ -->
+          <div class="faq-wrap__all">
+            <ul class="faq-wrap__all__list">
+              <!-- FAQ-1 -->
+              <li class="faq-wrap__all__list__item">
+                <dl>
+                  <dt class="faq_q">
+                    Ｑ） ストックキーパーはどのようなアプリですか？
+                  </dt>
+                  <dd class="faq_a">
+                    バーコードを読み取り、食品や日用品の賞味期限や在庫数を簡単に管理できるアプリです。<br>
+                    また、防災グッズや家計簿としても活用できます。
+                  </dd>
+                </dl>
+              </li>
+              <!-- FAQ-2-->
+              <li class="faq-wrap__all__list__item">
+                <dl>
+                  <dt class="faq_q">
+                    Ｑ） ストックキーパーはどのように使いますか？
+                  </dt>
+                  <dd class="faq_a">
+                    使い方は非常に簡単です。アプリの画面真ん中のボタンをタップして、商品のバーコードを読み取ります。<br>
+                    その後、賞味期限を設定するだけで、あとは賞味期限日に通知してくれます。
+                  </dd>
+                </dl>
+              </li>
+              <!-- FAQ-3-->
+              <li class="faq-wrap__all__list__item">
+                <dl>
+                  <dt class="faq_q">
+                    Ｑ） ストックキーパーはどのような機能がありますか？
+                  </dt>
+                  <dd class="faq_a">
+                    主な機能は、バーコードをスキャンして簡単商品登録、賞味期限日に通知、冷蔵庫や震災用などに分類、<br>
+                    カメラ撮影機能、サムネイル表示機能です。また、オリジナルバーコード機能やメモ機能、数量の管理機能もあります。
+                  </dd>
+                </dl>
+              </li>
+      
+            </ul>
+          </div>
+          <!-- ボタン -->
+          <div class="btn faq_btn">
+            <a href="https://twitter.com/kaori_mbc">その他の質問を見る</a>
+          </div>
+      
+        </div>
+      </section>
+      
+      <!-- お知らせNews -->
+      <section class="news" id="news">
+        <div class="news-wrap __wrap">
+          <!-- タイトル -->
+          <div class="wrap-ttl">
+            <p class="wrap-ttl__copy">Stock Keeperの</p>
+            <h2 class="wrap-ttl__ttl">お知らせ</h2>
+            <p class="wrap-ttl__ttl__sub">News</p>
+          </div>
+      
+          <div class="news-wrap__all">
+            <ul class="news-wrap__all__list">
+              <li class="news-wrap__all__list__item">
+                <strong>2023.05.01</strong> プレスリリース
+              </li>
+              <p>Stock Keeper（ストックキーパー）を正式リリース</p>
+              <li class="news-wrap__all__list__item">
+                <strong>2023.05.01</strong> プレスリリース
+              </li>
+              <p>Stock Keeper（ストックキーパー）を正式リリース</p>
+              <li class="news-wrap__all__list__item">
+                <strong>2023.05.01</strong> プレスリリース
+              </li>
+              <p>Stock Keeper（ストックキーパー）を正式リリース</p>
+            </ul>
+          </div>
+      
+        </div>
+      </section>
+      
+      <!-- お問い合わせcontact -->
+      <section class="contact" id="contact">
+        <div class="contact-wrap">
+          <!-- ボタン -->
+          <div class="btn faq_btn">
+            <a href="https://twitter.com/kaori_mbc">お問い合わせ</a>
+          </div>
+      
+          <!-- ご利用方法howと同じ -->
+          <div class="how-wrap__dw__block">
+            <div class="how-wrap__dw__block__txt">
+              <p class="block__inner__ttl__t __contact_dw">アプリをダウンロードする</p>
+            </div>
+      
+            <div class="how-wrap__dw__block__img">
+              <!-- App -->
+              <div class="how-wrap__dw__block__img__img">
+                <a href="https://www.apple.com/jp/app-store/">
+                  <img src="img/3.apple.png" alt="App Store">
+                </a>
+              </div>
+              <!-- Google -->
+              <div class="how-wrap__dw__block__img__img">
+                <a href="https://play.google.com/store/apps?hl=ja&gl=US/">
+                  <img src="img/2.google.png" alt="Google Store">
+                </a>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="footer-wrap">
+        <div class="footer-wrap__all">
+          <!-- ロゴ -->
+          <div class="footer-wrap__all__block1">
+            <!-- アプリロゴ -->
+            <a href="#" class="f-logo__1">
+              <img src="img/0.logo.png" alt="ロゴ">
+            </a>
+            <!-- Twitterロゴ -->
+            <a href="https://twitter.com/kaori_mbc" class="f-logo__2">
+              <img src="img/13.twitter.png" alt="ロゴ">
+            </a>
+          </div>
+
+          <!-- メニューリスト -->
+          <div class="footer-wrap__all__block2">
+            <!-- 1 -->
+            <ul class="footer-wrap__all__block2__list">
+              <li class="footer-wrap__all__block2__list__item">
+                <a href="#about">機能・特徴</a>
+              </li>
+              <li class="footer-wrap__all__block2__list__item">
+                <a href="#how">ご利用方法</a>
+              </li>
+            </ul>
+            <!-- 2 -->
+            <ul class="footer-wrap__all__block2__list">
+              <li class="footer-wrap__all__block2__list__item">
+                <a href="#voice">お客様の声</a>
+              </li>
+              <li class="footer-wrap__all__block2__list__item">
+                <a href="#faq">よくある質問</a>
+              </li>
+            </ul>
+            <!-- 3 -->
+            <ul class="footer-wrap__all__block2__list">
+              <li class="footer-wrap__all__block2__list__item">
+                <a href="#news">お知らせ</a>
+              </li>
+              <li class="footer-wrap__all__block2__list__item">
+                <a href="#contact">お問い合わせ</a>
+              </li>
+            </ul>
+            <!-- 4 -->
+            <ul class="footer-wrap__all__block2__list __border">
+              <li class="footer-wrap__all__block2__list__item">
+                <a href=>利用規約</a>
+              </li>
+              <li class="footer-wrap__all__block2__list__item">
+                <a href=>プライバシーポリシー</a>
+              </li>
+              <li class="footer-wrap__all__block2__list__item">
+                <a href=>特定商取引法に基づく表記</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+
+      <p class="footer-wrap__all__mail">mail : Stock.Keeper@gmail.com</p>
+
+      <p class="footer-wrap__all__copyright">©︎ 2023 Stock Keeper.All Rights Reserved</p>
+
+    </footer>
+
+    <!-- jQueryのプラグインでコンテンツデリバリネットワーク CDN -->
+    <!-- 「インターネット経由でファイルを提供してくれるもの」 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    
+  </body>
+
+
+</html>
