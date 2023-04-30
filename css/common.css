@@ -1097,8 +1097,20 @@ nav ul {
       margin-right: 0;
     }
 
+    .yellow_circle {
+      width: 20rem;
+      height: 20rem;
+      top: 17rem;
+    }
+
+    .pink_circle {
+      width: 30rem;
+      height: 30rem;
+      top: 9rem;
+    }
+
     .problem-people {
-      height: 53.5vh;
+      height: 52.5vh;
     }
 
     .problem-people-img {
@@ -1128,7 +1140,7 @@ nav ul {
     }
 
     .about-wrap__all__block {
-      padding: 4.5% 1.2%;
+      padding: 4.5% 3%;
     }
 
     .about-wrap__all__block__inner__left {
@@ -1139,16 +1151,25 @@ nav ul {
       width: 68.5%;
     }
 
+    .how__block__box__number1 {
+      height: 2.8rem;
+    }
+
     .how-wrap__all::after {
       width: 26rem;
     }
 
     .how-wrap__dw__block__img__img {
-      width: 40%;
+      width: 30%;
     }
 
     .faq-wrap__all, .news-wrap {
       width: 93.05%;
+    }
+
+    .btn {
+      width: 20rem;
+      line-height: 3;
     }
 
 }
@@ -1210,8 +1231,8 @@ nav ul {
   }
 
   .pink_circle {
-    width: 26rem;
-    height: 26rem;
+    width: 20rem;
+    height: 20rem;
     top: 6rem;
     left: 2rem;
     z-index: -2 ;
@@ -1228,7 +1249,7 @@ nav ul {
   }
 
   .top-wrap__txt_3__dw {
-    width: 75%;    
+    width: 60%;    
   }
 
   .problem-wrap-block1__inner {
@@ -1291,7 +1312,7 @@ nav ul {
   }
 
   .block__inner__ttl__t {
-    font-size: 1.8rem;  
+    font-size: 1.3rem;  
   }
 
   .block__inner__txt {
@@ -1323,7 +1344,7 @@ nav ul {
   }
 
   .how-wrap__dw__block__img__img {
-    width: 74%;
+    width: 50%;
     margin-bottom: 8%;
   }
 
@@ -1343,8 +1364,27 @@ nav ul {
     padding: 10.5% 0;
   }
 
+  .btn {
+    width: 15rem;
+    line-height: 3;
+  }
+
+  .btn a {
+    font-size: 1.3rem;
+  }
+
   .__contact_dw {
     margin-top: 11%;
+  }
+
+  .news-wrap__all__list__item {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .news-wrap__all__list p {
+    font-size: 1.1rem;
+    padding-bottom: 1%;
   }
 
     .footer-wrap__all__block2 {
