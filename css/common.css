@@ -32,7 +32,8 @@ nav ul {
 }
 
 .header-wrap {
-  padding: 2.1% 3.47%;  
+  /*padding: 2.1% 3.47%;*/
+  padding: 1% 3.47%;  
 }
 
 .header-wrap-inner {
@@ -41,13 +42,15 @@ nav ul {
   text-align: center;
   align-items: center;
   background-color: #fff;
-  padding: 1.38% 2.08%;
+  /*padding: 1.38% 2.08%;*/
+  padding: 1%;
   border-radius: 3rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
 .header-wrap__logo {
-  width: 25.68rem;
+  /*width: 25.68rem;*/
+  width: 15rem;
 }
 
 .header-wrap__logo img {
@@ -85,9 +88,11 @@ nav ul {
   background-color: #000;
   padding: 0;
   transition: all 0.8s;
-  border-radius: 5rem;
+  border-radius: 50px;
   width: 18.2%;
-  height: 3rem;
+  /*height: 3rem;*/
+  height: 2.1rem;
+
 }
 
 .header-wrap__nav__list__item__contact:hover {
@@ -142,8 +147,8 @@ nav ul {
   position: absolute;
   z-index: -1;
   background: #F0E68C;
-  width: 30rem;
-  height: 30rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;  
   right: 3rem;
   bottom: 3rem;
@@ -153,10 +158,10 @@ nav ul {
   position: absolute;
   z-index: -1;
   background: #FFB6C1;
-  width: 35rem;
-  height: 35rem;
+  width: 25rem;
+  height: 25rem;
   border-radius: 50%;
-  right: 15rem;
+  right: 7rem;
   bottom: 6rem;
 }
 
@@ -166,15 +171,17 @@ nav ul {
   font-size: 4.16vw;
   font-weight: 700;
   padding-left: 8%;
-  padding-top: 7.5%;
-  padding-bottom: 1.875rem;
+  /*padding-top: 7.5%;*/
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .top-wrap-left__txt_1 {
   color: #fff;
   line-height: 1.8;
   font-size: 1.56rem;
-  margin-bottom: 18%;
+  /*margin-bottom: 18%;*/
+  margin-bottom: 10%;
 }
 
 .top-wrap__txt_2 {
@@ -199,8 +206,9 @@ nav ul {
 }
 
 .top-wrap__txt_3__dw {
-  width: 41%;
-  margin-right: 7.5%;
+  /*width: 41%;*/
+  width: 35%;
+  margin-right: 25px;
 }
 
 .top-wrap__txt_3__dw img {
@@ -237,7 +245,7 @@ nav ul {
 /*吹き出し*/
 .problem-wrap-block1 {
   background: #fff;
-  border-radius: 3rem;
+  border-radius: 30px;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   position: relative;
 }
@@ -298,7 +306,7 @@ nav ul {
 /*吹き出し*/
 .problem-people-baloon {
   background: #EDEDED;
-  border-radius: 2rem;
+  border-radius: 30px;
   padding: 10%;
   position: relative;
 }
@@ -354,7 +362,7 @@ nav ul {
   display: inline-block;
   color: #fff;
   background: #FFB6C1;
-  border-radius: 3rem;
+  border-radius: 30px;
   padding: 10px 30px;
   font-size: 1.25rem;
   font-weight: bold;
@@ -410,7 +418,7 @@ nav ul {
 
 .solution-people {
   background: #fff;
-  border-radius: 3rem;
+  border-radius: 30px;
   width: 26.8vw; /*14.4px × 26.8vw = 385.92 */
   padding: 3.8% 1.5%;
   text-align: center;
@@ -447,9 +455,9 @@ nav ul {
 
 .solution-people-txt {
   background-color: #E5F4F2;
-  padding: 0.625rem;
+  padding: 10px;
   text-align: start;
-  border-radius: 1rem;
+  border-radius: 30px;
 }
 
 
@@ -598,7 +606,8 @@ nav ul {
 .how__block__box__number1 {
   display: block;
   width: 1.8rem;
-  height: 3.25rem;
+  /*height: 3.25rem;*/
+  height: 2.95rem;
   background-image: url(../img/1.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -660,7 +669,8 @@ nav ul {
 }
 
 .how-wrap__dw__block__img__img {
-  width: 24.6%;
+  /*width: 24.6%;*/
+  width: 12rem;
   margin: 0 2.6%;
 }
 
@@ -718,9 +728,10 @@ nav ul {
 }
 
 .btn {
-  width: 25rem;
+  /*width: 25rem;*/
+  width: 20rem;
   margin: 0 auto;
-  line-height: 4;
+  line-height: 2.8;
 }
 
 .btn:hover {
@@ -963,7 +974,7 @@ nav ul {
       /* 表示させる  PCではdrawerに対してvisibility: hidden; */
       width: 24px;
       position: absolute;
-      top: 50px;
+      top: 25px;
       right: 50px;
       border-top: solid 4px #000;
       /*drawerでは1番目の横線*/
@@ -1052,6 +1063,10 @@ nav ul {
       transform: rotate(45deg);
     }
 
+    .header-wrap__logo {
+      display: flex;
+    }
+
     .top-wrap-block {
       flex-direction: column-reverse;
       align-items: center;
@@ -1095,18 +1110,21 @@ nav ul {
 
     .top-wrap__txt_3__dw {
       margin-right: 0;
+      width: 180px;
     }
 
     .yellow_circle {
-      width: 20rem;
-      height: 20rem;
+      width: 15rem;
+      height: 15rem;
       top: 17rem;
+      right: 8rem;
     }
 
     .pink_circle {
-      width: 30rem;
-      height: 30rem;
+      width: 20rem;
+      height: 20rem;
       top: 9rem;
+      left: 3rem;
     }
 
     .problem-people {
@@ -1156,11 +1174,12 @@ nav ul {
     }
 
     .how-wrap__all::after {
-      width: 26rem;
+      width: 18.81rem;
+      left: 19.94%;
     }
 
     .how-wrap__dw__block__img__img {
-      width: 30%;
+      width: 10rem;
     }
 
     .faq-wrap__all, .news-wrap {
@@ -1168,8 +1187,12 @@ nav ul {
     }
 
     .btn {
-      width: 20rem;
-      line-height: 3;
+      width: 270px;
+      line-height: 2.5;
+    }
+
+    .btn a {
+      font-size: 25px;
     }
 
 }
@@ -1177,7 +1200,7 @@ nav ul {
 
 @media screen and (max-width: 480px) {
   .header-wrap__logo {
-    width: 20rem;
+    width: 12rem;
   }
 
     header .drawer {
@@ -1185,7 +1208,7 @@ nav ul {
       /* 表示させる  PCではdrawerに対してvisibility: hidden; */
       width: 24px;
       position: absolute;
-      top: 40px;
+      top: 12px;
       right: 50px;
       border-top: solid 4px #000;
       /*drawerでは1番目の横線*/
@@ -1224,16 +1247,16 @@ nav ul {
   }
 
   .yellow_circle {
-    width: 19rem;
-    height: 19rem;
+    width: 10rem;
+    height: 10rem;
     top: 15rem;
     z-index: -1;
   }
 
   .pink_circle {
-    width: 20rem;
-    height: 20rem;
-    top: 6rem;
+    width: 15rem;
+    height: 15rem;
+    top: 8rem;
     left: 2rem;
     z-index: -2 ;
   }
@@ -1246,6 +1269,10 @@ nav ul {
   .top-wrap-left__txt_3 {
     flex-direction: column;
     align-items: center;
+  }
+
+  .top-wrap__txt_3 {
+    font-size: 1.3rem;
   }
 
   .top-wrap__txt_3__dw {
@@ -1284,6 +1311,26 @@ nav ul {
     padding-top: 6.8%;
   }
 
+  .logo_mark img {
+    width: 40px;
+  }
+
+  .logo_mark_txt {
+    font-size: 1.2rem;
+  }
+
+  .logo_mark_txt strong {
+    font-size: 1.8rem;
+  }
+
+  .problem-block2-txt {
+    font-size: 1.2rem;
+  }
+
+    .problem-block2-txt strong {
+      font-size: 1.8rem;
+    }
+
   .solution-people {
     width: 70vw;
     padding: 3.8% 5%;
@@ -1312,7 +1359,7 @@ nav ul {
   }
 
   .block__inner__ttl__t {
-    font-size: 1.3rem;  
+    font-size: 1.15rem;  
   }
 
   .block__inner__txt {
@@ -1355,6 +1402,25 @@ nav ul {
   .how-wrap__dw__block__txt {
     margin-bottom: 5%;
   }
+
+  .how__block__box__number2 {
+    top: -32px;
+  }
+
+  .how__block__box__number3 {
+    top: -32px;
+  }
+
+  .solution-people-copy2 {
+    font-size: 1.6rem;
+  }
+
+  .faq_q {
+    font-size: 1.1rem;
+    padding: 2.3% 5%;
+  }
+
+
 
   .faq-wrap__all__list {
     margin: 11.2% 0;
