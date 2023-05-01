@@ -43,7 +43,8 @@ nav ul {
   align-items: center;
   background-color: #fff;
   /*padding: 1.38% 2.08%;*/
-  padding: 1%;
+  /*padding: 1%;*/
+  padding: 5px;
   border-radius: 3rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
 }
@@ -91,7 +92,8 @@ nav ul {
   border-radius: 50px;
   width: 18.2%;
   /*height: 3rem;*/
-  height: 2.1rem;
+  /*height: 2.1rem;*/
+  height: 2.8rem;
 
 }
 
@@ -974,7 +976,7 @@ nav ul {
       /* 表示させる  PCではdrawerに対してvisibility: hidden; */
       width: 24px;
       position: absolute;
-      top: 25px;
+      top: 20px;
       right: 50px;
       border-top: solid 4px #000;
       /*drawerでは1番目の横線*/
@@ -1127,13 +1129,42 @@ nav ul {
       left: 3rem;
     }
 
+    .problem-wrap-block1__inner {
+      width: 95%;
+    }
+
+    .problem-wrap-block1__people__all {
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
     .problem-people {
-      height: 52.5vh;
+      height: 420px;
+      width: 250px;
     }
 
     .problem-people-img {
-      height: 29vh;
-      margin: 26.5%  auto 0;
+      height: 235px;
+      margin: 50px 3px 10px;
+      width: 180px;
+    }
+
+    .problem-people-img img {
+      object-fit: cover;
+    }
+
+    .problem-wrap-block2 {
+      padding-top: 50px;
+    }
+
+    .problem-wrap-block3__people__all {
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
+    .solution-people {
+      width: 240px;
+      margin: 1px;
     }
 
     .solution-people-img {
@@ -1151,6 +1182,7 @@ nav ul {
 
     .block__inner__ttl__t {
       font-size: 2rem;
+      line-height: 1.1;/*4回目修正で追加*/
     }
 
     .about-wrap {
@@ -1169,14 +1201,26 @@ nav ul {
       width: 68.5%;
     }
 
+        .how-wrap__all {
+          flex-direction: column;
+          align-items: center;
+          margin: 8% 0 8%;
+        }
+    
+        .how-wrap__all__block__box {
+          width: 350px;
+          margin: 30px 0;
+        }
+    
+        .how-wrap__all::after {
+          transform: rotate(90deg);
+    
+        }
+
     .how__block__box__number1 {
       height: 2.8rem;
     }
 
-    .how-wrap__all::after {
-      width: 18.81rem;
-      left: 19.94%;
-    }
 
     .how-wrap__dw__block__img__img {
       width: 10rem;
@@ -1291,9 +1335,17 @@ nav ul {
     flex-direction: column;
     align-items: center;
   }
+  
+  .problem-wrap-block1::before{
+    bottom: -19px;
+    width: 38px;
+    height: 38px;
+  }
+
 
   .problem-people {
     width: 62.5vw;
+    margin-bottom: 20px;
   }
 
   .problem-people-img {
