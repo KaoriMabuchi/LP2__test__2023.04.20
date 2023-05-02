@@ -537,7 +537,7 @@ nav ul {
   font-weight: bold;
   display: inline-block;
   border-bottom: solid #F0E68C 10px;
-  line-height: 0.75;
+  line-height: 1;
   margin-bottom: 4.47%;
 }
 
@@ -651,7 +651,7 @@ nav ul {
 /*緑の横棒*/
 .how-wrap__all::after {
   content: "";
-  background: #3E9D8F;
+  background: #AEDFD7;
   width: 33rem;
   height: 2rem;
   position: absolute;
@@ -959,6 +959,12 @@ nav ul {
   .how-wrap__all__block__box {
     width: 24.8%;
   }
+
+  .how-wrap__all::after {
+    left: 5%;
+  }
+
+
 }
 
 /*タブレット〜スマホ*/
@@ -1168,7 +1174,8 @@ nav ul {
     }
 
     .solution-people-img {
-      height: 17.47vh;
+      height: 230px;
+      width: 180px;
     }
 
     .solution-people-copy {
@@ -1176,17 +1183,18 @@ nav ul {
     }
 
     .solution-people-copy2 {
-      font-size: 2.125rem;
+      font-size: 29px;
       padding: 1rem 0;
     }
 
     .block__inner__ttl__t {
-      font-size: 2rem;
+      font-size: 1.8rem;
       line-height: 1.1;/*4回目修正で追加*/
+      
     }
 
     .about-wrap {
-      width: 93.05%;
+      width: 70%;
     }
 
     .about-wrap__all__block {
@@ -1198,7 +1206,17 @@ nav ul {
     }
 
     .about-wrap__all__block__inner__right {
-      width: 68.5%;
+      width: 96%;
+      text-align: center;
+    }
+
+    .block__inner__txt {
+      text-align: start;
+    }
+
+    .about-wrap__all__block__inner {
+      flex-direction: column;
+      align-items: center;
     }
 
         .how-wrap__all {
@@ -1214,6 +1232,8 @@ nav ul {
     
         .how-wrap__all::after {
           transform: rotate(90deg);
+          width: 30rem;
+          left: 30%;
     
         }
 
@@ -1253,7 +1273,7 @@ nav ul {
       width: 24px;
       position: absolute;
       top: 12px;
-      right: 50px;
+      right: 29px;
       border-top: solid 4px #000;
       /*drawerでは1番目の横線*/
       cursor: pointer;
@@ -1431,6 +1451,9 @@ nav ul {
 
   .how-wrap__all::after {
     transform: rotate(90deg);
+    left: 0%;
+    width: 28rem;
+    height: 30px;
   }
 
   .how__block__box__number1 {
